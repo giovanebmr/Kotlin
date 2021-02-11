@@ -7,7 +7,7 @@
 
 2º Descompactar o arquivo no diretório raiz e adicionar o diretório bin ao path do sistema:
 
-Exemplo: Se for descompactado em "C:\" o path do sistema deve conter uma entrada com o seguinte caminho:
+Exemplo: Se for descompactado em "C:\\" o path do sistema deve conter uma entrada com o seguinte caminho:
 
 ``` C:\kotlin-compiler-1.4.30\kotlinc\bin ```
 
