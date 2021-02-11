@@ -11,4 +11,6 @@ fun main(){
     println( dioBank.info() )
     println( banco2.info() )
 
+    print("ok")
+
 }

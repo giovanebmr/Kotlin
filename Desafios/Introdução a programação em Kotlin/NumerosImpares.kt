@@ -21,7 +21,7 @@ Exemplo de Entrada	Exemplo de Saída
 
 import java.util.Scanner
 
-fun main(args: Array<String>) {
+fun main() {
     val input = Scanner(System.`in`)
     val x = input.nextInt()
     
