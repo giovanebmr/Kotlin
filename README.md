@@ -29,6 +29,10 @@ A opção "-d" indica o caminho de saída para arquivos de classe gerados, que p
 
 ``` kotlinc -help ```
 
+7º Para usar o shell interativo, basta executar o compilador sem parâmetros:
+
+``` kotlinc ```
+
 Referência: https://kotlinlang.org/docs/tutorials/command-line.html
 
 
