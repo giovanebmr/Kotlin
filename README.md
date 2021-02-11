@@ -17,7 +17,7 @@
 
 ``` $ kotlinc calculadora.kt -include-runtime -d calculadora.jar ```
 
-A opção "-d" indica o caminho de saída para arquivos de classe gerados, que podem ser um diretório ou um arquivo ".jar". A -include-runtimeopção torna o arquivo .jar resultante autocontido e executável, incluindo a biblioteca de tempo de execução Kotlin nele.
+A opção "-d" indica o caminho de saída para arquivos de classe gerados, que podem ser um diretório ou um arquivo ".jar". A -include-runtimeopção torna o arquivo .jar resultante autocontido e executável, incluindo nele a biblioteca de tempo de execução Kotlin.
 
 5º Para executar usar:
 
