@@ -1,28 +1,10 @@
 package one.digitalinnovation.diobank
 
-class Pessoa {
+abstract class Pessoa (
 
-    var nome:String = "Nome da Pessoa"
+         val nome: String,
 
-    var cpf:String = "111.111.111-42"
-    private set
+         val cpf: String
 
-    constructor()
+)
 
-    fun pessoaInfo() = "$nome e $cpf"
-
-    inner class Endereco{
-        var rua:String = "Rua da Penha"
-    }
-
-}
-
-
-fun main(){
-
-    val giovane = Pessoa()
-
-    println( giovane.pessoaInfo() )
-
-
-}
