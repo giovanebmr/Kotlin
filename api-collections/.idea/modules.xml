@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/api-collections.iml" filepath="$PROJECT_DIR$/api-collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Aplicando conceitos de Coleções, Arrays e Listas/api-collections/api-collections.iml" filepath="$PROJECT_DIR$/../Aplicando conceitos de Coleções, Arrays e Listas/api-collections/api-collections.iml" />
     </modules>
   </component>
 </project>
