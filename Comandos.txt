@@ -1,6 +1,0 @@
-Limpa a tela no linux
-print("\u001b[H\u001b[2J")
-
-
-https://www.javatpoint.com/how-to-clear-screen-in-java
-para Windows e Linux
