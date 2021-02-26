@@ -8,16 +8,16 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.contact_item.view.*
 
 
-class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHolder>(){
+class ContactAdapter(val listener: ClickItemContactListener) :
+    RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHolder>() {
 
-    private val list:MutableList<Contact> = mutableListOf()
-
+    private val list: MutableList<Contact> = mutableListOf()
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactAdapterViewHolder {
         //momento de criar a view
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.contact_item, parent,false)
-        return ContactAdapterViewHolder(view)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.contact_item, parent, false)
+        return ContactAdapterViewHolder(view, list, listener)
     }
 
     override fun onBindViewHolder(holder: ContactAdapterViewHolder, position: Int) {
@@ -31,14 +31,25 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
     }
 
 
-    class ContactAdapterViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView){
-        fun bind(contact:Contact){
+    class ContactAdapterViewHolder(
+        itemView: View,
+        var list: List<Contact>,
+        var listener: ClickItemContactListener
+    ) : RecyclerView.ViewHolder(itemView) {
+
+        init {
+            itemView.setOnClickListener {
+                listener.clickItemContact(list[adapterPosition])
+            }
+        }
+
+        fun bind(contact: Contact) {
             itemView.tv_name.text = contact.name
             itemView.tv_phone.text = contact.phone
         }
     }
 
-    fun upDateList(list: List<Contact>){
+    fun upDateList(list: List<Contact>) {
         //Atualiza a lista e notifica o adapter para refazer as views
         this.list.clear()
         this.list.addAll(list)

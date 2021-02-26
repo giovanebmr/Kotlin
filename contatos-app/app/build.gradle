@@ -22,6 +22,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+
+    //alterando a versão de compilação do java de 1.6 default para 1.8
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -35,4 +45,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation "androidx.recyclerview:recyclerview:1.1.0"
     implementation "androidx.cardview:cardview:1.0.0"
+    implementation "com.google.android.material:material:1.0.0"
+    implementation "com.google.code.gson:gson:2.8.6"
 }

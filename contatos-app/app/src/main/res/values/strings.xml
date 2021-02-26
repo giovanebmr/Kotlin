@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">contatos-app</string>
+    <string name="app_name">Contatos App</string>
     <string name="iv_photograph_content_description">Imagem do contato</string>
+    <string name="menu1">Menu 1</string>
+    <string name="menu2">Menu 2</string>
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
 </resources>

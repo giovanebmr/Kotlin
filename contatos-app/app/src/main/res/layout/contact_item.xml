@@ -40,6 +40,7 @@
 
         <TextView
             android:id="@+id/tv_phone"
+            style="@style/TextViewDefault"
             android:layout_width="0dp"
             android:textSize="14sp"
             android:layout_marginLeft="16dp"
