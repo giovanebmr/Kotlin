@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sorteio-app</string>
+    <string name="texto_sorteio">Escolha um número entre 0 e 10:</string>
+    <string name="texto_info">Nenhum número selecionado.</string>
+</resources>
