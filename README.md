@@ -1,7 +1,7 @@
 # Kotlin Training
 
 
-# Trabalhando com o compilador de linha de comando no Windows
+# Trabalhando com o compilador Kotlin na linha de comando no Windows
 
 1º Baixar o arquivo kotlin-compiler-1.4.30.zip no link: https://github.com/JetBrains/kotlin/releases/tag/v1.4.30
 
@@ -19,7 +19,7 @@ Exemplo: Se for descompactado em "C:\\" o path do sistema deve conter uma entrad
 
 ``` $ kotlinc calculadora.kt -include-runtime -d calculadora.jar ```
 
-A opção "-d" indica o caminho de saída para arquivos de classe gerados, que podem ser um diretório ou um arquivo ".jar". A -include-runtimeopção torna o arquivo .jar resultante autocontido e executável, incluindo nele a biblioteca Kotlin de tempo de execução.
+A opção "-d" indica o caminho de saída para arquivos de classe gerados, que podem ser um diretório ou um arquivo ".jar". A opção -include-runtime torna o arquivo .jar resultante autocontido e executável, incluindo nele a biblioteca Kotlin de tempo de execução.
 
 5º Para executar usar:
 
