@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:scaleType="centerCrop"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/ic_baseline_image_24"
+        android:contentDescription="@string/imagem_selecionada"
+        />
+
+
+
+
+<Button
+    android:id="@+id/pick_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:text="Selecione uma imagem"
+    android:padding="10dp"
+    android:layout_margin="16dp"/>
+
+
+
+
+
+</LinearLayout>
