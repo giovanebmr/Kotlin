@@ -2,7 +2,11 @@ package br.com.notificacoes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
+import com.google.firebase.iid.FirebaseInstanceId
+
+//Foi utilizado o Firebase da conta GRPALMAS
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,5 +22,8 @@ class MainActivity : AppCompatActivity() {
         botaoSendNotification.setOnClickListener {
             this.showNotification("1234","Bootcamp Android", "Kotlin Android Curso")
         }
+
+        Log.i("**newToken", FirebaseInstanceId.getInstance().token.toString())
+
     }
 }

@@ -9,6 +9,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.media.RingtoneManager
 import android.os.Build
+import android.widget.Toast
 import androidx.core.app.NotificationCompat
 
 lateinit var notificationChannel: NotificationChannel
@@ -36,6 +37,9 @@ fun Context.showNotification(chanelId: String, title: String, body: String) {
             setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE))
             setContentIntent(pendingIntent)
         }
+    }else{
+        Toast.makeText(this,"NotificationUtils Falha: Build.VERSION.SDK_INT = " + Build.VERSION.SDK_INT + " " +
+                "Build.VERSION_CODES.O = " + Build.VERSION_CODES.O, Toast.LENGTH_SHORT).show()
     }
 
     notificationManager.notify(chanelId.toInt(), builder.build())
